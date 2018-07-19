@@ -11,26 +11,51 @@
 <body>
     <div class="wrap">
         <h1>Click</h1>
-        <div id="circlecont">
-        </div>
-        <input id="start" type="button" value="Start" onclick="start();"/>
 
-        <br>
+        <!CIRCLES>
+        <div id="circlecont"></div>
+        <input id="start" class="button round" type="button" value="Start" onclick="start();"/>
+
+        <hr class="line small">
+
+        <!BPM SECTION>
+        <input class="button round sml" type="button" value="<<" onclick="inc(-10);"/>
+        <input class="button round med" type="button" value="<" onclick="inc(-1);"/>
         <input id="inputbpm"><p style="display:inline-block;">bpm</p>
-        <br>
+        <input class="button round med" type="button" value=">" onclick="inc(1);"/>
+        <input class="button round sml" type="button" value=">>" onclick="inc(10);"/>
+
+            <br>
         <input id="slider" type="range" min="40" max="200" value="120" class="slider" >
-        <br>
-        <input id="tap" type="button" value="Tap"/>
-        <br>
-        <br>
+            <br>
+
+        <!TAP TEMPO>
+        <input id="tap" class="button tapTempo" type="button" value="Tap"/>
+
+        <hr class="line small">
+
+        <!TIME SIGNATURE>
         <input id="beats" class="input" type="button">
-        <br>
+            <br>
         <input id="doubles" class="input" type="button" >
+            <br>
+            <br>
 
+        <!SOUND SELECTION>
+        <select id="soundselect" class="button" name="Sound" onchange="updateSound()">
+            <option value="0">Ableton</option>
+            <option value="1">Cubase</option>
+            <option value="2">FL Studio</option>
+            <option value="3">Logic</option>
+            <option value="4">Maschine</option>
+            <option value="5">MPC</option>
+            <option value="6">ProTools</option>
+            <option value="7">Marimba (Pro Tools)</option>
+            <option value="8">Reason</option>
+            <option value="9">Sonar</option>
+        </select> 
+        <hr class="line">
         <script type="text/javascript" src="script.js"></script>
-
-       
-
     </div>
 
 

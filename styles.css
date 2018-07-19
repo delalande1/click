@@ -1,8 +1,9 @@
+
+/* Global*/
 body {
     background-color: #feeb53;
     font-family: sans-serif;
     color: #161515;
-
 }
 
 h1 {
@@ -10,43 +11,68 @@ h1 {
     margin-bottom: 25px;
 }
 
-.circle {
-    width: 40px;
-    height: 40px;
-    background: #aab1b8;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    display:inline-block;
-    padding: 5px;
-    margin: 5px;
-    border:2px solid rgba(22,22,22,0.4);
+.wrap {
+    text-align: center;
+}
+
+.line {
+    color: #615920;
+    opacity: 30%;
+    border: 1px solid rgba(66,66,66,0.2);
+    min-width: 300px;
+    max-width: 30%;
+    margin: 30px auto;
+}
+
+.small {
+    min-width: 0;
+    width:80px;
 
 }
 
-.active {
-    background: #feeb53;
+/* inputs */
+/* buttons */
+
+.button {
+    background:#161515 ;
+    color: #feeb53;
+    border-color: #feeb53;
+    text-align: center;
+
 }
-#start {
+select {
+    width: 120px;
+    height: 30px;
+}
+
+.tapTempo {
+    width: 60px;
+    height: 30px;
+    margin:30px 0 15px 0;
+}
+
+.round {
     width: 60px;
     height: 60px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    background:#161515 ;
-    color: #feeb53;
-    border-color: #feeb53;
     margin:30px 0 15px 0;
 }
 
-#tap {
-    width: 60px;
+.med {
+    width: 30px;
     height: 30px;
-    background:#161515 ;
-    color: #feeb53;
-    border-color: #feeb53;
-    margin:30px 0 15px 0;
+    margin: 0;
 }
+
+.sml {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    font-size:5px;
+}
+
 #inputbpm, .input {
     background: none;
     border: none;
@@ -63,6 +89,50 @@ h1 {
 
 }
 
-.wrap {
+select {
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    background:#161515 ;
+    color: #feeb53;
+    border-color: #feeb53;
+}
+
+
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: #aab1b8;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display:inline-block;
+    padding: 5px;
+    margin: 5px;
+    border:2px solid rgba(22,22,22,0.4);
+
+}
+
+
+.accent {
+    background: #545658;
+    content: "hello";
+    color: black;
     text-align: center;
 }
+.active {
+    background: #feeb53;
+}
+
+
+
+
+
+
+
+
+
+
+
